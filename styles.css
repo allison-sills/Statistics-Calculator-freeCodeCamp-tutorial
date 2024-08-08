@@ -1,23 +1,27 @@
+/* Style for the entire body of the document */
 body {
-  margin: 0;
-  background-color: rgb(27, 27, 50);
-  text-align: center;
-  color: #fff;
+  margin: 0; /* Removes default margin around the body */
+  background-color: rgb(27, 27, 50); /* Sets a dark background color */
+  text-align: center; /* Centers text alignment for all elements */
+  color: #fff; /* Sets the text color to white */
 }
 
+/* Style for buttons */
 button {
-  cursor: pointer;
-  background-color: rgb(59, 59, 79);
-  border: 3px solid white;
-  color: white;
+  cursor: pointer; /* Changes cursor to a pointer when hovering over the button */
+  background-color: rgb(59, 59, 79); /* Sets a dark background color for the button */
+  border: 3px solid white; /* Adds a white border around the button */
+  color: white; /* Sets the text color of the button to white */
 }
 
+/* Style for input fields */
 input {
-  background-color: rgb(10, 10, 35);
-  color: white;
-  border: 1px solid rgb(59, 59, 79);
+  background-color: rgb(10, 10, 35); /* Sets a very dark background color for the input field */
+  color: white; /* Sets the text color inside the input field to white */
+  border: 1px solid rgb(59, 59, 79); /* Adds a border with a color matching the button */
 }
 
+/* Style for elements with the class 'bold' */
 .bold {
-  font-weight: bold;
+  font-weight: bold; /* Makes the text inside elements with this class bold */
 }

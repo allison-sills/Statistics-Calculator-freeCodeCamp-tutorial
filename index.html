@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Define the character encoding for the document -->
     <meta charset="utf-8" />
+    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
+    <!-- Link to external JavaScript file -->
     <script src="./script.js"></script>
+    <!-- Title of the webpage displayed in the browser tab -->
     <title>Statistics Calculator</title>
   </head>
   <body>
+    <!-- Main heading of the page -->
     <h1>Statistics Calculator</h1>
+    <!-- Instruction for the user -->
     <p>Enter a list of comma-separated numbers.</p>
+    
+    <!-- Form for user input, triggers JavaScript function on submit -->
     <form onsubmit="calculate(); return false;">
+      <!-- Label for the input field -->
       <label for="numbers">Numbers:</label>
+      <!-- Input field for the user to enter numbers -->
       <input type="text" name="numbers" id="numbers" />
+      <!-- Submit button for the form -->
       <button type="submit">Calculate</button>
     </form>
+    
+    <!-- Section for displaying results -->
     <div class="results">
+      <!-- Description and placeholder for Mean -->
       <p>
         The <dfn>mean</dfn> of a list of numbers is the average, calculated by
         taking the sum of all numbers and dividing that by the count of numbers.
       </p>
       <p class="bold">Mean: <span id="mean"></span></p>
+      
+      <!-- Description and placeholder for Median -->
       <p>
         The <dfn>median</dfn> of a list of numbers is the number that appears in
         the middle of the list, when sorted from least to greatest.
       </p>
       <p class="bold">Median: <span id="median"></span></p>
+      
+      <!-- Description and placeholder for Mode -->
       <p>
         The <dfn>mode</dfn> of a list of numbers is the number that appears most
         often in the list.
       </p>
       <p class="bold">Mode: <span id="mode"></span></p>
+      
+      <!-- Description and placeholder for Range -->
       <p>
         The <dfn>range</dfn> of a list of numbers is the difference between the
         largest and smallest numbers in the list.
       </p>
       <p class="bold">Range: <span id="range"></span></p>
+      
+      <!-- Description and placeholder for Variance -->
       <p>
         The <dfn>variance</dfn> of a list of numbers measures how far the values
         are from the mean, on average.
       </p>
       <p class="bold">Variance: <span id="variance"></span></p>
+      
+      <!-- Description and placeholder for Standard Deviation -->
       <p>
         The <dfn>standard deviation</dfn> of a list of numbers is the square
         root of the variance.
